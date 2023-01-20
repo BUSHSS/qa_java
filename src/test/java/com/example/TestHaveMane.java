@@ -4,6 +4,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
+
 @RunWith(Parameterized.class)
 public class TestHaveMane {
 
@@ -22,10 +23,11 @@ public class TestHaveMane {
         };
     }
     @Test
-    public void DoesHaveManeTest() throws Exception {
+    public void doesHaveManeTest() throws Exception {
 
         Lion lion = new Lion(feline, sex);
         Assert.assertEquals(result, lion.doesHaveMane());
     }
+
 }
 
