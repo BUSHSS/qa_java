@@ -10,15 +10,17 @@ import java.util.List;
 
 @RunWith(MockitoJUnitRunner.class)
 public class TestCat {
-    Feline feline1;
+
+    @Mock
+    Feline feline;
+
     @Test
     //Проверка покрытия getSound в Cat
     public void getSound() throws Exception {
-        Cat cat=new Cat(feline1);
+        Cat cat=new Cat(feline);
         Assert.assertEquals("Meow", cat.getSound());
     }
-    @Mock
-    Feline feline;
+
     @Test
     public void getFood3t() throws Exception {
         Cat cat=new Cat(feline);
